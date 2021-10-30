@@ -1,2 +1,34 @@
-# Person-is-eligible-to-vote-or-not
-Created by Sukanya,  C++ program where we check if a person is eligible to vote or not
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int age;
+
+	cout<<"Enter your age: ";
+	cin>>age;
+
+	//person is teenager or not
+	//>=13 and <=19
+	if(age>=13 && age<=19)
+	{
+		cout<<"Person is Teenager"<<endl;
+	}
+	else
+	{
+		cout<<"Person is not a Teenager"<<endl;
+	}
+
+
+	//condition to check voting eligility
+	if(age>=18)
+	{
+		cout<<"Person is eligible for voting"<<endl;
+	}
+	else
+	{
+		cout<<"Person is not eligible for voating"<<endl;
+	}
+
+	return 0;
+}
